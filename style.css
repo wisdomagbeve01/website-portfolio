@@ -433,3 +433,23 @@ footer p {
 }
 
 
+.cert-link {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Keep the link color same as surrounding text */
+  font-weight: 400; /* Normal weight */
+  animation: breathe 1.5s ease-in-out infinite; /* Apply the breathing animation */
+}
+
+@keyframes breathe {
+  0%, 100% {
+      font-weight: 700; /* Bold */
+  }
+  50% {
+      font-weight: 400; /* Light */
+  }
+}
+
+.cert-link:hover {
+  animation: none; /* Stop the animation on hover */
+  font-weight: 700; /* Keep it bold on hover */
+}
